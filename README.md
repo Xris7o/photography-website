@@ -3,11 +3,11 @@ Consistent code, even when written by a team, should look like one person wrote 
 
 HTML Coding Standards
 
-Formatting
+Formatting:
   Indentation tab size: 2 (equals 2 spaces)
 
 	HTML5 syntax must be used and all attributes must use double quotes around attributes.
-	For example:
+	
 	  <video autoplay="autoplay" poster="poster_image.jpg">
   	  <source src="foo.ogg" type="video/ogg">
 		</video>
@@ -15,9 +15,9 @@ Formatting
 	HTML5 elements should be used where appropriate reserving <div> and <span> elements for situations where there is no semantic value (such as wrapping elements to provide styling hooks).
 
 
-Naming
+Naming:
 	All ids, classes and attributes must be lowercase with hyphens used for separation.
-	For example:
+	
 		<td class="alt-row"></td>
 
 	Use clear and precise names for IDs and classes. 
@@ -25,7 +25,7 @@ Naming
 	Avoid using unnecessary classes and wrapper elements.
 
 
-Doctype and layout
+Doctype and layout:
 	All documents must be using the HTML5 doctype and the <html> element should have a "lang" attribute.
 	The <head> should also at a minimum include "viewport" and "charset" meta tags.
 	For example:
@@ -40,7 +40,7 @@ Doctype and layout
 		</html>
 
 
-Forms
+Forms:
 	Form fields must always include a <label> element with a "for" attribute matching the "id" on the input.
 	This helps accessibility by focusing the input when the label is clicked, it also helps screen readers match labels to their respective inputs.
 	For example:
@@ -57,7 +57,7 @@ Forms
 CSS coding standards
 CSS stylesheets should be contained in a directory named 'css'.
 
-Formatting
+Formatting:
 	Indentation tab size: 2 (equals 2 spaces)
 	Other formatting rules:
     Use soft-tabs with a two space indent.
@@ -93,7 +93,7 @@ Formatting
 		}
 
 
-Naming
+Naming:
 	All ids, classes and attributes must be lowercase with hyphens used for separation.
 	For example:
 	  /* GOOD */
@@ -105,7 +105,7 @@ Naming
 		.dataset_list {}
 
 
-Comments
+Comments:
 	Comments should be used liberally to explain anything that may be unclear at first glance, especially IE workarounds or hacks.
 	For example:
 		.prose p {
@@ -121,7 +121,7 @@ Comments
 		}
 
 
-Modularity and specificity
+Modularity and specificity:
 	You may use pseudo selectors to keep the HTML clean.
 	For example:
 		.social li:nth-child(1) a {
@@ -159,11 +159,11 @@ Modularity and specificity
 JavaScript coding standards
 Javascript files should be contained in a directory named 'js'.
 
-Formatting
+Formatting:
   All JavaScript documents must use indentation tab size: 2 (equals 2 spaces).
 
 
-White space
+White space:
   whitespace must not be used _inside_ parentheses between the parentheses and their Contents.
 	For example:
 		// BAD: Too much whitespace.
@@ -185,10 +185,11 @@ White space
 		}
 
 
-Quotes
+Quotes:
+	Single quotes should be used everywhere unless writing JSON or the string contains them. This makes it easier to create strings containing HTML.
 
 
-Variable declarations
+Variable declarations:
 	One var statement must be used per variable assignment.
 	These must be declared at the top of the function in which they are being used.
 	For example:
@@ -209,7 +210,7 @@ Variable declarations
 		];
 
 
-Naming
+Naming:
 	All properties, functions and methods must use lowercase camelCase.
 	For example:
 		var myUsername = 'bill';
@@ -225,21 +226,21 @@ Naming
 		jQuery('.download').click(onDownloadClick);
 
 
-Comments
+Comments:
   Comments should be used to explain anything that may be unclear when you return to it in six months time.
 
 
 
 
 
-Others
-Images
+Others:
+Images:
   Images should be contained in a directory named 'img'. In general, images should not be divided into subdirectories.
 
 
-Media Files
+Media Files:
 	Flash, Silverlight, or other media files should be contained in a directory named 'media'.
 
 
-Other Files
+Other Files:
 	All other downloadable documents, such as PDFs or Word docs, should be contained in a directory named 'files'.
