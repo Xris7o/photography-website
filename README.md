@@ -4,31 +4,27 @@ Consistent code, even when written by a team, should look like one person wrote 
 HTML Coding Standards
 
 Formatting:
-  Indentation tab size: 2 (equals 2 spaces)
-
-	HTML5 syntax must be used and all attributes must use double quotes around attributes.
+Indentation tab size: 2 (equals 2 spaces)
+HTML5 syntax must be used and all attributes must use double quotes around attributes.
 	
 	  <video autoplay="autoplay" poster="poster_image.jpg">
   	  <source src="foo.ogg" type="video/ogg">
 		</video>
 
-	HTML5 elements should be used where appropriate reserving <div> and <span> elements for situations where there is no semantic value (such as wrapping elements to provide styling hooks).
+HTML5 elements should be used where appropriate reserving <div> and <span> elements for situations where there is no semantic value (such as wrapping elements to provide styling hooks).
 
 
 Naming:
-	All ids, classes and attributes must be lowercase with hyphens used for separation.
+All ids, classes and attributes must be lowercase with hyphens used for separation.
 	
 		<td class="alt-row"></td>
 
-	Use clear and precise names for IDs and classes. 
-	Choose names according to semantic meaning rather than presentation.
-	Avoid using unnecessary classes and wrapper elements.
+Use clear and precise names for IDs and classes. Choose names according to semantic meaning rather than presentation. Avoid using unnecessary classes and wrapper elements.
 
 
 Doctype and layout:
-	All documents must be using the HTML5 doctype and the <html> element should have a "lang" attribute.
-	The <head> should also at a minimum include "viewport" and "charset" meta tags.
-	For example:
+All documents must be using the HTML5 doctype and the <html> element should have a "lang" attribute. The <head> should also at a minimum include "viewport" and "charset" meta tags.
+
 		<!DOCTYPE html>
 		<html lang="en">
   	  <head>
@@ -41,13 +37,12 @@ Doctype and layout:
 
 
 Forms:
-	Form fields must always include a <label> element with a "for" attribute matching the "id" on the input.
-	This helps accessibility by focusing the input when the label is clicked, it also helps screen readers match labels to their respective inputs.
-	For example:
+Form fields must always include a <label> element with a "for" attribute matching the "id" on the input. This helps accessibility by focusing the input when the label is clicked, it also helps screen readers match labels to their respective inputs.
+	
 		<label for="field-email">email</label>
 		<input type="email" id="field-email" name="email" value="" />
 
-	Each <input> should have an "id" that is unique to the page. It does not have to match the "name" attribute.
+Each <input> should have an "id" that is unique to the page. It does not have to match the "name" attribute.
 
 
 
