@@ -52,7 +52,7 @@ CSS coding standards:
 CSS stylesheets should be contained in a directory named 'css'.
 
 Formatting:
-Indentation tab size: 2 (equals 2 spaces). Other formatting rules:
+Indentation tab size: 3 (equals 2 spaces). Other formatting rules:
     Use soft-tabs with a two space indent.
     Use double quotes.
     Use shorthand notation where possible.
