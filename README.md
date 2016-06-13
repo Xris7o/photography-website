@@ -4,8 +4,7 @@ Consistent code, even when written by a team, should look like one person wrote 
 HTML Coding Standards
 
 Formatting:
-Indentation tab size: 2 (equals 2 spaces)
-HTML5 syntax must be used and all attributes must use double quotes around attributes.
+Indentation tab size: 2 (equals 2 spaces). HTML5 syntax must be used and all attributes must use double quotes around attributes.
 	
 	  <video autoplay="autoplay" poster="poster_image.jpg">
   	  <source src="foo.ogg" type="video/ogg">
@@ -53,8 +52,7 @@ CSS coding standards
 CSS stylesheets should be contained in a directory named 'css'.
 
 Formatting:
-	Indentation tab size: 2 (equals 2 spaces)
-	Other formatting rules:
+Indentation tab size: 2 (equals 2 spaces). Other formatting rules:
     Use soft-tabs with a two space indent.
     Use double quotes.
     Use shorthand notation where possible.
@@ -89,8 +87,8 @@ Formatting:
 
 
 Naming:
-	All ids, classes and attributes must be lowercase with hyphens used for separation.
-	For example:
+All ids, classes and attributes must be lowercase with hyphens used for separation.
+
 	  /* GOOD */
 		.dataset-list {}
 
@@ -101,8 +99,8 @@ Naming:
 
 
 Comments:
-	Comments should be used liberally to explain anything that may be unclear at first glance, especially IE workarounds or hacks.
-	For example:
+Comments should be used liberally to explain anything that may be unclear at first glance, especially IE workarounds or hacks.
+
 		.prose p {
   	  font-size: 1.1666em /* 14px / 12px */;
 		}
@@ -117,8 +115,8 @@ Comments:
 
 
 Modularity and specificity:
-	You may use pseudo selectors to keep the HTML clean.
-	For example:
+You may use pseudo selectors to keep the HTML clean.
+
 		.social li:nth-child(1) a {
   	  background-image: url(twitter.png);
 		}
@@ -131,9 +129,8 @@ Modularity and specificity:
 		  background-image: url(linked-in.png);
 		}
 
-	However this will break any time the HTML changes for example if an item is added or removed.
-	Instead we can use class names to ensure the icons always match the elements.
-	For example:
+However this will break any time the HTML changes for example if an item is added or removed. Instead we can use class names to ensure the icons always match the elements.
+
 		.social .twitter {
 	    background-image: url(twitter.png);
 		}
@@ -155,12 +152,12 @@ JavaScript coding standards
 Javascript files should be contained in a directory named 'js'.
 
 Formatting:
-  All JavaScript documents must use indentation tab size: 2 (equals 2 spaces).
+All JavaScript documents must use indentation tab size: 2 (equals 2 spaces).
 
 
 White space:
-  whitespace must not be used _inside_ parentheses between the parentheses and their Contents.
-	For example:
+Whitespace must not be used _inside_ parentheses between the parentheses and their Contents.
+
 		// BAD: Too much whitespace.
 		function getUrl( full ) {
 		  var url = '/styleguide/javascript/';
@@ -181,13 +178,12 @@ White space:
 
 
 Quotes:
-	Single quotes should be used everywhere unless writing JSON or the string contains them. This makes it easier to create strings containing HTML.
+Single quotes should be used everywhere unless writing JSON or the string contains them. This makes it easier to create strings containing HTML.
 
 
 Variable declarations:
-	One var statement must be used per variable assignment.
-	These must be declared at the top of the function in which they are being used.
-	For example:
+One var statement must be used per variable assignment. These must be declared at the top of the function in which they are being used.
+
 	  // GOOD:
 		var good = 'string';
 		var alsoGood = 'another';
@@ -206,8 +202,8 @@ Variable declarations:
 
 
 Naming:
-	All properties, functions and methods must use lowercase camelCase.
-	For example:
+All properties, functions and methods must use lowercase camelCase.
+
 		var myUsername = 'bill';
 		var methods = {
 		  getSomething: function () {}
@@ -222,7 +218,7 @@ Naming:
 
 
 Comments:
-  Comments should be used to explain anything that may be unclear when you return to it in six months time.
+Comments should be used to explain anything that may be unclear when you return to it in six months time.
 
 
 
@@ -230,12 +226,12 @@ Comments:
 
 Others:
 Images:
-  Images should be contained in a directory named 'img'. In general, images should not be divided into subdirectories.
+Images should be contained in a directory named 'img'. In general, images should not be divided into subdirectories.
 
 
 Media Files:
-	Flash, Silverlight, or other media files should be contained in a directory named 'media'.
+Flash, Silverlight, or other media files should be contained in a directory named 'media'.
 
 
 Other Files:
-	All other downloadable documents, such as PDFs or Word docs, should be contained in a directory named 'files'.
+All other downloadable documents, such as PDFs or Word docs, should be contained in a directory named 'files'.
