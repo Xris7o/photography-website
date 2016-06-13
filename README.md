@@ -6,9 +6,9 @@ HTML Coding Standards
 Formatting:
 Indentation tab size: 2 (equals 2 spaces). HTML5 syntax must be used and all attributes must use double quotes around attributes.
 	
-	  <video autoplay="autoplay" poster="poster_image.jpg">
+	<video autoplay="autoplay" poster="poster_image.jpg">
   	  <source src="foo.ogg" type="video/ogg">
-		</video>
+	</video>
 
 HTML5 elements should be used where appropriate reserving <div> and <span> elements for situations where there is no semantic value (such as wrapping elements to provide styling hooks).
 
@@ -16,7 +16,7 @@ HTML5 elements should be used where appropriate reserving <div> and <span> eleme
 Naming:
 All ids, classes and attributes must be lowercase with hyphens used for separation.
 	
-		<td class="alt-row"></td>
+	<td class="alt-row"></td>
 
 Use clear and precise names for IDs and classes. Choose names according to semantic meaning rather than presentation. Avoid using unnecessary classes and wrapper elements.
 
@@ -24,22 +24,22 @@ Use clear and precise names for IDs and classes. Choose names according to seman
 Doctype and layout:
 All documents must be using the HTML5 doctype and the <html> element should have a "lang" attribute. The <head> should also at a minimum include "viewport" and "charset" meta tags.
 
-		<!DOCTYPE html>
-		<html lang="en">
-  	  <head>
+	<!DOCTYPE html>
+	<html lang="en">
+  	<head>
     	  <meta charset="utf-8" />
-    		  <meta name="viewport" content="width=device-width, initial-scale=1">
-    		  <title>Example Site</title>
-  		</head>
-  		<body></body>
-		</html>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Example Site</title>
+  	</head>
+  	<body></body>
+	</html>
 
 
 Forms:
 Form fields must always include a <label> element with a "for" attribute matching the "id" on the input. This helps accessibility by focusing the input when the label is clicked, it also helps screen readers match labels to their respective inputs.
 	
-		<label for="field-email">email</label>
-		<input type="email" id="field-email" name="email" value="" />
+	<label for="field-email">email</label>
+	<input type="email" id="field-email" name="email" value="" />
 
 Each <input> should have an "id" that is unique to the page. It does not have to match the "name" attribute.
 
@@ -64,54 +64,54 @@ Indentation tab size: 2 (equals 2 spaces). Other formatting rules:
     Always follow a rule with one line of whitespace.
     Always quote url() and @import() contents.
     Do not indent blocks.
-	For example:
-		.media {
+
+	.media {
   	  overflow: hidden;
   	  color: #fff;
   	  background-color: #000; /* Fallback value */
   	  background-image: linear-gradient(black, grey);
-		}
+	}
 
-		.media .img {
+	.media .img {
   	  float: left;
   	  border: 1px solid #ccc;
-		}
+	}
 
-		.media .img img {
+	.media .img img {
   	  display: block;
-		}
+	}
 
-		.media .content {
+	.media .content {
   		background: #fff url("../images/media-background.png") no-repeat;
-		}
+	}
 
 
 Naming:
 All ids, classes and attributes must be lowercase with hyphens used for separation.
 
-	  /* GOOD */
-		.dataset-list {}
+	/* GOOD */
+	.dataset-list {}
 
-		/* BAD */
-		.datasetlist {}
-		.datasetList {}
-		.dataset_list {}
+	/* BAD */
+	.datasetlist {}
+	.datasetList {}
+	.dataset_list {}
 
 
 Comments:
 Comments should be used liberally to explain anything that may be unclear at first glance, especially IE workarounds or hacks.
 
-		.prose p {
+	.prose p {
   	  font-size: 1.1666em /* 14px / 12px */;
-		}
+	}
 
-		.ie7 .search-form {
+	.ie7 .search-form {
   		/*
     	Force the item to have layout in IE7 by setting display to block.
     	See: http://reference.sitepoint.com/css/haslayout
   		*/
   		display: inline-block;
-		}
+	}
 
 
 Modularity and specificity:
@@ -209,9 +209,8 @@ All properties, functions and methods must use lowercase camelCase.
 		  getSomething: function () {}
 		};
 
+Event handlers and callback functions should be prefixed with “on”.
 
-	Event handlers and callback functions should be prefixed with “on”.
-	For example:
 		function onDownloadClick(event) {}
 
 		jQuery('.download').click(onDownloadClick);
