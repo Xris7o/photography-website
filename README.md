@@ -4,7 +4,7 @@ Consistent code, even when written by a team, should look like one person wrote 
 HTML Coding Standards
 
 Formatting:
-Indentation tab size: 2 (equals 2 spaces). HTML5 syntax must be used and all attributes must use double quotes around attributes.
+Indentation tab size: 3 (equals 3 spaces). HTML5 syntax must be used and all attributes must use double quotes around attributes.
 	
 	<video autoplay="autoplay" poster="poster_image.jpg">
   	  <source src="foo.ogg" type="video/ogg">
