@@ -26,10 +26,10 @@ All documents must be using the HTML5 doctype and the <html> element should have
 
 	<!DOCTYPE html>
 	<html lang="en">
-  	<head>
-    	  <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Example Site</title>
+  		<head>
+    			<meta charset="utf-8" />
+    			<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Example Site</title>
   	</head>
   	<body></body>
 	</html>
