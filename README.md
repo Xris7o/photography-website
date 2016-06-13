@@ -26,12 +26,12 @@ All documents must be using the HTML5 doctype and the <html> element should have
 
 	<!DOCTYPE html>
 	<html lang="en">
-  		<head>
-    			<meta charset="utf-8" />
-    			<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>Example Site</title>
-  	</head>
-  	<body></body>
+  	  <head>
+    	    <meta charset="utf-8" />
+    	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    	    <title>Example Site</title>
+  	  </head>
+  	  <body></body>
 	</html>
 
 
@@ -106,11 +106,11 @@ Comments should be used liberally to explain anything that may be unclear at fir
 	}
 
 	.ie7 .search-form {
-  		/*
+  	/*
     	Force the item to have layout in IE7 by setting display to block.
     	See: http://reference.sitepoint.com/css/haslayout
-  		*/
-  		display: inline-block;
+  	*/
+  	  display: inline-block;
 	}
 
 
@@ -160,21 +160,21 @@ Whitespace must not be used _inside_ parentheses between the parentheses and the
 
 	// BAD: Too much whitespace.
 	function getUrl( full ) {
-	var url = '/styleguide/javascript/';
-	if ( full ) {
-	url = 'http://okfn.github.com/ckan' + url;
-	}
-	return url;
+	  var url = '/styleguide/javascript/';
+	  if ( full ) {
+	    url = 'http://okfn.github.com/ckan' + url;
+	  }
+	  return url;
 	}
 
-		// GOOD:
-		function getUrl(full) {
-		  var url = '/styleguide/javascript/';
-		  if (full) {
-		    url = 'http://okfn.github.com/ckan' + url;
-		  }
-		  return url;
-		}
+	// GOOD:
+	function getUrl(full) {
+	  var url = '/styleguide/javascript/';
+	  if (full) {
+	    url = 'http://okfn.github.com/ckan' + url;
+	  }
+	  return url;
+	}
 
 
 Quotes:
