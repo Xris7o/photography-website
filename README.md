@@ -48,7 +48,7 @@ Each <input> should have an "id" that is unique to the page. It does not have to
 
 
 
-CSS coding standards
+CSS coding standards:
 CSS stylesheets should be contained in a directory named 'css'.
 
 Formatting:
@@ -82,7 +82,7 @@ Indentation tab size: 2 (equals 2 spaces). Other formatting rules:
 	}
 
 	.media .content {
-  		background: #fff url("../images/media-background.png") no-repeat;
+  	  background: #fff url("../images/media-background.png") no-repeat;
 	}
 
 
@@ -117,31 +117,31 @@ Comments should be used liberally to explain anything that may be unclear at fir
 Modularity and specificity:
 You may use pseudo selectors to keep the HTML clean.
 
-		.social li:nth-child(1) a {
+	.social li:nth-child(1) a {
   	  background-image: url(twitter.png);
-		}
+	}
 
-		.social li:nth-child(2) a {
-		  background-image: url(facebook.png);
-		}
+	.social li:nth-child(2) a {
+	  background-image: url(facebook.png);
+	}
 
-		.social li:nth-child(3) a {
-		  background-image: url(linked-in.png);
-		}
+	.social li:nth-child(3) a {
+	  background-image: url(linked-in.png);
+	}
 
 However this will break any time the HTML changes for example if an item is added or removed. Instead we can use class names to ensure the icons always match the elements.
 
-		.social .twitter {
-	    background-image: url(twitter.png);
-		}
+	.social .twitter {
+	  background-image: url(twitter.png);
+	}
 
-		.social .facebook {
-		  background-image: url(facebook.png);
-		}
+	.social .facebook {
+	  background-image: url(facebook.png);
+	}
 
-		.social .linked-in {
-		  background-image: url(linked-in.png);
-		}
+	.social .linked-in {
+	  background-image: url(linked-in.png);
+	}
 
 
 
@@ -158,14 +158,14 @@ All JavaScript documents must use indentation tab size: 2 (equals 2 spaces).
 White space:
 Whitespace must not be used _inside_ parentheses between the parentheses and their Contents.
 
-		// BAD: Too much whitespace.
-		function getUrl( full ) {
-		  var url = '/styleguide/javascript/';
-		  if ( full ) {
-		    url = 'http://okfn.github.com/ckan' + url;
-		  }
-		  return url;
-		}
+	// BAD: Too much whitespace.
+	function getUrl( full ) {
+	var url = '/styleguide/javascript/';
+	if ( full ) {
+	url = 'http://okfn.github.com/ckan' + url;
+	}
+	return url;
+	}
 
 		// GOOD:
 		function getUrl(full) {
@@ -184,36 +184,36 @@ Single quotes should be used everywhere unless writing JSON or the string contai
 Variable declarations:
 One var statement must be used per variable assignment. These must be declared at the top of the function in which they are being used.
 
-	  // GOOD:
-		var good = 'string';
-		var alsoGood = 'another';
+	// GOOD:
+	var good = 'string';
+	var alsoGood = 'another';
 
-		// GOOD:
-		var good = 'string';
-		var okay = [
-		  'hmm', 'a bit', 'better'
-		];
+	// GOOD:
+	var good = 'string';
+	var okay = [
+	  'hmm', 'a bit', 'better'
+	];
 
-		// BAD:
-		var good = 'string',
-		  iffy = [
-		  'hmm', 'not', 'great'
-		];
+	// BAD:
+	var good = 'string',
+	  iffy = [
+	  'hmm', 'not', 'great'
+	];
 
 
 Naming:
 All properties, functions and methods must use lowercase camelCase.
 
-		var myUsername = 'bill';
-		var methods = {
-		  getSomething: function () {}
-		};
+	var myUsername = 'bill';
+	var methods = {
+	  getSomething: function () {}
+	};
 
 Event handlers and callback functions should be prefixed with “on”.
 
-		function onDownloadClick(event) {}
+	function onDownloadClick(event) {}
 
-		jQuery('.download').click(onDownloadClick);
+	jQuery('.download').click(onDownloadClick);
 
 
 Comments:
