@@ -69,38 +69,31 @@ ul {
   border: 1px solid #A78861;
   position: relative;
 }
-.slider #img {
+.slider .button {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  left: 0px;
+  top: 65%;
+}
+.slider #current-slide-image {
   width: 1000px;
   height: 666px;
   position: absolute;
 }
 .slider #left-holder {
   height: 450px;
-  width: 100px;
+  width: 50px;
   position: absolute;
   left: 0px;
   top: 0px;
-}
-.slider #left-holder .left {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  left: 0px;
-  top: 65%;
 }
 .slider #right-holder {
   height: 450px;
-  width: 100px;
+  width: 50px;
   position: absolute;
   right: 0px;
   top: 0px;
-}
-.slider #right-holder .right {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  top: 65%;
-  right: 0px;
 }
 .main {
   width: 90%;
@@ -148,7 +141,7 @@ ul {
     border: 1px solid #A78861;
     position: relative;
   }
-  .slider #img {
+  .slider #current-slide-image {
     width: 800px;
     height: 533px;
     position: absolute;
