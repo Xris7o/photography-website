@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Home</title>
+   <link rel="stylesheet" href="styles/css/normalize.css">
+   <link rel="stylesheet" href="styles/css/base.css">
+</head>
+<body>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+<div class="header">
+   <a href="" class="header-logo">Венци Видео</a>
+   <nav class="menu">
+      <ul>
+         <li><a href="#" class="tabs active">НАЧАЛО</a></li>
+         <li><a href="#" class="tabs">ФОТО ГАЛЕРИЯ</a></li>
+         <li><a href="#" class="tabs">ВИДЕО ГАЛЕРИЯ</a></li>
+         <li><a href="#" class="tabs">ЗА НАС</a></li>
+         <li><a href="#" class="tabs">УСЛУГИ</a></li>
+         <li><a href="#" class="tabs">КОНТАКТИ</a></li>
+      </ul>
+   </nav>
+</div>
 
+<main class="main">
+
+<div class="slider" id="container">
+   <img id="img" src="js/img.JPG" alt="" onmouseover="timer.stop()" onmouseleave="timer.start()">
+   <div id="left-holder"><img onClick="slide(-1)" id="resett" class="left reset" src="img/left.png" alt=""></div>
+   <div id="right-holder"><img onClick="slide(1)" id="reset" class="right reset" src="img/right.png" alt=""></div>
+</div>
+<!-- <div class="slider">
+  <ul>
+    <li><img src="js/img.JPG"></li>
+    <li><img src="js/img1.JPG"></li>
+    <li><img src="js/img2.JPG"></li>
+    <li><img src="js/img3.JPG"></li>
+  </ul>
+</div>
+
+<ul>
+   <li><a href="javascript:sliders[0]:goToPrev()">Prev</a></li>
+   <li><a href="javascript:sliders[0]:goToNext()">Next</a></li>
+</ul>
+</main>
+ -->
+
+
+
+<div class="main-text">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi pariatur, totam itaque! Illo ratione soluta doloribus accusamus pariatur quam, culpa dolores impedit voluptas! Non dignissimos culpa alias ratione eaque. Aperiam.
+  </p>
+</div>
+</main>
+
+
+<footer class="footer">
+  <ul class="footer-container">
+    <li><a href="#" class="small-tabs">Начало</a></li>
+    <li><a href="#" class="small-tabs">Фото галерия</a></li>
+    <li><a href="#" class="small-tabs">Видео галерия</a></li>
+    <li><a href="#" class="small-tabs">За нас</a></li>
+    <li><a href="#" class="small-tabs">Услуги</a></li>
+    <li><a href="#" class="small-tabs">Конктакти</a></li>
+  </ul>
+</footer>
+<script src="js/application.js" type="text/javascript" charset="utf-8" async defer></script>
+<!-- <script type="text/javascript" charset="utf-8" async defer>
+  var sliders = []
+  $('.slider').each(function() {
+    sliders.push(new Slider(this))
+  })
+</script> -->
+</body>
+</html>
